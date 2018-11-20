@@ -17,7 +17,7 @@
     <div class="col-md-3">
       Cuadrado
       <input id="cua_lado" type="number" min= 0 max = 1000 class="form-control" placeholder="Lado">
-       <button id="but_cua" type="button" class="btn btn-outline-dark">Calcular</button>
+       <button id="but_cua" onclick="calculoCuadrado()" type="button" class="btn btn-outline-dark">Calcular</button>
     </div>
     <div class="col-md-3">
       Rectángulo
@@ -39,7 +39,15 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="/js/index.js"></script>
+	<article id="contenedor_resultado" class="contenedor">
+		<h2 id="titulo_escogido"></h2>
+		<ul id="lista-cuadrado">
+			<li id="lis_cua_lado" style="display: none;"></li>
+		</ul>
+		
+	</article>
+
+  <script type="text/javascript" src="js/index.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
