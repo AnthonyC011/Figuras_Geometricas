@@ -24,15 +24,24 @@ function calculoRectangulo(){
 }
 function calculoTriangulo(){
 
-	var base = document.getElementById("tri_base").value;
-	var altura = document.getElementById("tri_altura").value;
+	var cateto1 = document.getElementById("tri_cateto1").value;
+	var cateto2 = document.getElementById("tri_cateto2").value;
 	var hipotenusa = document.getElementById("tri_hipotenusa").value;
-	var area = base * altura/2
-	var perimetro = base+altura+hipotenusa
+	var area = 100
+	var perimetro = cateto1 + cateto2 + hipotenusa
+	var hipotenusa = sqrt(pow2(cateto1) + pow2(cateto2))
+	var cateto = sqrt(pow2(hipotenusa) - pow2(cateto1))
+
 
 	document.getElementById("titulo_escogido").innerHTML = "Ha escogido triangulo";
 	document.getElementById("lis_tria1").style.display = "block";
-	document.getElementById("lis_tria1").innerHTML = "El area del triangulo es  = "+ area;
+	document.getElementById("lis_tria1").innerHTML = "El area del triangulo es  = "+area;
 	document.getElementById("lis_tria2").style.display = "block";
 	document.getElementById("lis_tria2").innerHTML = "El perimetro del triangulo es = "+ perimetro;
+
+	if (hipotenusa == 0){
+		document.getElementById("lis_tria3").style.display = "inline";
+		document.getElementById("lis_tria3").innerHTML = "El valor de la hipotenusa de triangulo = " + hipotenusa
 	}
+
+}

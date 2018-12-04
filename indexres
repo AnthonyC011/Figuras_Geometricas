@@ -27,8 +27,8 @@
     </div>
     <div class="col-md-3">
       Triángulo
-      <input id="tri_base" type="number" min= 0 max = 1000 class="form-control" placeholder="Base">
-      <input id="tri_altura" type="number" min= 0 max = 1000 class="form-control" placeholder="Altura">
+      <input id="tri_cateto1" type="number" min= 0 max = 1000 class="form-control" placeholder="Cateto1">
+      <input id="tri_cateto2" type="number" min= 0 max = 1000 class="form-control" placeholder="Cateto2">
       <input id="tri_hipotenusa" type="number" min= 0 max = 1000 class="form-control" placeholder="Hipotenusa">
       <button id="but_rec" onclick= "calculoTriangulo()" type="button" class="btn btn-outline-dark">Calcular</button>
 
